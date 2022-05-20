@@ -1,0 +1,42 @@
+.section-about{
+    margin-top: 1rem;
+    background-color: $color-white;
+    padding: 5rem 0;
+
+    @include respond(phone) {
+        margin-top: -2rem;
+    }
+
+    @include respond(tab-port) {
+        margin-top: -2rem;
+    }
+
+    @include respond(tab-land) {
+        margin-top: -2rem;
+    }
+}
+
+
+.section-services{
+    background-color: $color-white;
+    padding: 10rem 0;
+}
+
+.section-reviews{
+    position: relative;
+    margin-top: 1rem;
+    // background-color: $color-white;
+    padding: 5rem 0;
+    height: 120vh;
+}
+
+.section-contact{
+    margin-top: 1rem;
+    padding: 5rem 0;
+}
+
+.main {
+    @include respond(phone) {
+        width: 100%;
+    }
+}

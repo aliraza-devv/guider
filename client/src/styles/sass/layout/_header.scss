@@ -1,0 +1,38 @@
+.header{
+    
+    &-primary{
+        margin-bottom: 4rem;
+        padding: 1.6rem;
+        border: .3rem solid $color-white;
+        animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+            margin-top: 12rem;
+        }
+
+        @include respond(tab-port) {
+            margin-top: 10rem;
+        }
+
+        @include respond(tab-land) {
+            margin-top: 6rem;
+        }
+    }
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.shape{
+    margin-top: -25rem;
+}
+
+.header-btn-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

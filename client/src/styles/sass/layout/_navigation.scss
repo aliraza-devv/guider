@@ -1,0 +1,111 @@
+.navigation{
+    position: fixed;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-primary-light, 0.85),
+        rgba($color-secondary, 0.85));
+    width: 100%;
+    z-index: 100;
+    &__logo{
+        
+        &-img{
+         width: 18rem;
+         margin-left: 1rem;
+         margin-top: 1rem;   
+        }
+    }
+
+    &__nav{
+        &__list{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 1.9rem;
+
+            @include respond(phone) {
+                position: fixed;
+                top: 6.9rem;
+                left: -100%;
+                background-image: linear-gradient(
+                    to right top,
+                    rgba($color-primary-light, 0.85),
+                    rgba($color-secondary, 0.85));
+                height: 100vh;
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-top: -2rem;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+
+    &__item{
+        list-style: none;
+        margin-right: 4rem;
+        margin-top: -5rem;
+
+        @include respond(phone) {
+            margin: 4rem 0;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        padding: .2rem;
+        font-weight: 300;
+        cursor: pointer;
+
+        @include respond(phone) {
+            margin: 4rem 0;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 1.5px solid transparent;
+        }
+
+        &:hover:before{
+            border-bottom: 3px solid $color-grey-light-1;
+            animation: animate .6s linear forwards;
+        }
+    }
+}
+
+.btn{
+    &--menu{
+        color: $color-white;
+        font-size: 3rem;
+        margin-left: 38rem;
+        cursor: pointer;
+        display: none;
+        margin-top: -5rem;
+
+        @include respond(phone) {
+            display: block;
+        }
+        
+    }
+}
+#click {
+    display: none;
+}
+
+#click:checked ~ ul {
+    left: 0;
+    text-align: center;
+}
+
+#click:checked ~ .btn--menu i:before{
+    content: "\f00d";
+}
+
+#click:checked ~ .btn--menu i::after{
+    display: none;
+}

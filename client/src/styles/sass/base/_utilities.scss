@@ -1,0 +1,55 @@
+.u-center-text{text-align: center;}
+
+.u-margin-bottom-small{margin-bottom: 1.3rem;}
+.u-margin-bottom-med{margin-bottom: 4rem;}
+.u-margin-bottom-big{margin-bottom: 8rem;}
+
+.u-margin-top-mid{margin-top: 6rem;}
+.u-margin-top-big{margin-top: 11rem;}
+.u-margin-top-big-2{margin-top: 15rem;}
+.u-margin-top-min{margin-top: 3rem;}
+.u-margin-top-small{margin-top: 1rem;}
+
+.u-margin-top-min-6{margin-top: 1.2rem;}
+.u-margin-top{margin-top: -6.2rem;}
+.u-margin-top-2{margin-top: -10rem;}
+.u-margin-top-min-2{margin-top: -3rem;}
+.u-margin-top-min-3{margin-top: -.7rem;}
+.u-margin-top-min-4{margin-top: -3.5rem;}
+.u-margin-top-min-5{margin-top: -2.2rem;}
+
+.u-margin-left{margin-left: 4rem;}
+.u-margin-left-max{margin-left: 6rem;}
+.u-margin-left-min{margin-left: 2rem;}
+.u-margin-left-minus{margin-left: -2.6rem !important;}
+
+.u-border-radius{
+    border-radius: 1px;
+}
+
+.u-border-bottom{
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1.5px solid $color-black;
+}
+
+.u-big-border{
+    margin-top: 12rem;
+    border: 1px solid $color-black;
+}
+
+.u-link{
+    text-decoration: none;
+    color: $color-white;
+}
+
+.u-font{
+    font-size: 1.2rem;
+}
+
+.not-verified {
+    font-size: 1.4rem;
+    color: red;
+    margin-left: 1rem;
+}

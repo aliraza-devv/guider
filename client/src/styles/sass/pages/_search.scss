@@ -1,0 +1,163 @@
+.place{
+    margin-bottom: 10rem;
+}
+
+.search{
+    margin-left: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__input{
+        padding: 1.5rem;
+        height: 5rem;
+        border-radius: 20rem;
+        border: none;
+        font-size: large;
+
+        @include respond(phone) {
+            padding: 1rem;
+            width: 100%;
+        }
+
+        &::placeholder{
+            position: absolute;
+            font-size: $default-font-size;
+            font-weight: 500;
+            color: $color-grey-dark-2;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+        }
+
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        }
+    }
+}
+
+.icon-search{
+    color: $color-white;
+}
+
+.shape-place{
+    margin-top: -40rem;
+}
+
+.items{
+    height: 22rem;
+
+    &--1{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.6),
+            rgba($color-secondary, 0.6)),
+            url(../../../assets/img/pak-map.jpg) ;
+        background-size: 100%;
+        border-radius: .5rem;
+    }
+
+    &--2{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.6),
+            rgba($color-secondary, 0.6)),
+            url(../../../assets/img/pic.jpg) ;
+        background-size: 100%;
+        border-radius: .5rem;
+    }
+
+    &--3{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.6),
+            rgba($color-secondary, 0.6)),
+            url(../../../assets/img/nature-1.jpg) ;
+        background-size: 100%;
+        border-radius: .5rem;
+    }
+}
+
+// Packages
+
+.head{
+    margin-top: 5rem;
+}
+
+.list{
+    margin-bottom: 10rem;
+    list-style: none;
+    margin-left: 5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    &-link{
+        margin-bottom: 1rem;
+    }
+}
+
+.link-tag{
+    text-decoration: none;
+    color: $color-black;
+    font-size: 20px;
+
+    &:hover{
+        color: $color-primary-light;
+    }
+}
+
+// GUIDE
+
+.guide{
+    display: flex;
+    height: 21rem;
+
+    &__style{
+        background-image: linear-gradient(to right,
+            rgba($color-primary-light, 0.5),
+            rgba($color-secondary, 0.5));
+        padding: 2rem;
+    }
+
+    &__img{
+        height: 11rem;
+        border-radius: 50%;
+    }
+
+    &__info{
+        margin-left: 4rem;
+
+        &--text{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: .6rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--style{
+            margin-left: 1.2rem;
+            color: $color-black;
+            font-weight: bold;
+        }
+    }
+}
+
+.loading {
+    height: 600px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.heading-box {
+    display: flex;
+
+
+    &--h {
+        margin-left: 4rem;
+    }
+}

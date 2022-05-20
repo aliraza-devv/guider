@@ -1,0 +1,47 @@
+.footer{
+    background-color: $color-grey-dark-3;
+    padding: 4rem 0;
+
+    &__logo{
+        width: 20rem;
+        height: auto;
+
+        &-box{
+            text-align: center;
+            margin-bottom: 8rem;
+        }
+    }
+
+    &-para{
+        color: $color-white;
+        font-size: $default-font-size;
+        font-weight: 300;
+    }
+}
+
+.contacts{
+    color: $color-white;
+    border-top: 1px solid $color-white;
+    padding-top: 2rem;
+
+    &__heading{
+        font-size: 4rem;
+
+        &__sub{
+            font-weight: 300;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+            margin-bottom: .7rem;
+        }
+    }
+
+    &__value{
+        display: flex;
+    }
+    
+}
+
+.copyrights{
+    border-top: 1px solid $color-white;
+    padding-top: 2rem;
+}

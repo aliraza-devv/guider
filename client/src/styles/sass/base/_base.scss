@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: lato;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.header {
+    height: 97vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.85),
+            rgba($color-secondary, 0.85)),
+        url(../../../assets/img/header-2.jpg);
+    background-size: cover;
+    
+
+    &-packages {
+        height: 90vh;
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.7),
+                rgba($color-secondary, 0.7)),
+            url(../../../assets/img/castle.jpg);
+        background-size: cover;
+    }
+
+    &-payment{
+        height: 70vh;
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.7),
+                rgba($color-secondary, 0.7)),
+            url(../../../assets/img/history.jpg);
+        background-size: cover;
+    }
+}
+
+.main-reviews {
+    
+    @include respond(phone) {
+        height: 110rem;
+    }
+
+    @include respond(tab-port) {
+        height: 110rem;
+    }
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 15rem;
+
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;;
+    } 
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-white;
+        margin-left: 10rem;
+        // border: 1px solid $color-grey-dark;
+        padding: 1.5rem 1.5rem 5rem 1.5rem;
+        box-shadow: 0 3rem 6rem rgba($color-black, 0.5);
+    }
+}

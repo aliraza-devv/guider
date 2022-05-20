@@ -1,0 +1,78 @@
+.main-contact{
+    margin-top: -1rem;
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light-1, 0.7),
+        rgba($color-grey, 0.7)),
+        url(../../../assets/img/form-bg.jpg);
+    background-size: cover;
+
+    @include respond(phone) {
+        height: 90rem;
+    }
+
+    @include respond(tab-port) {
+        height: 90rem;
+    }
+} 
+
+.form{
+
+    @include respond(phone) {
+        margin-left: 0;
+    }
+
+    @include respond(tab-port) {
+        margin-left: 0;
+    }
+    
+    margin-left: 11rem;
+    &__group:not(:last-child){
+        margin-bottom: 3rem;
+    }
+;
+
+    &__input{
+        font-size: 1.5rem;
+        color: inherit;
+        font-family: inherit;
+        color: $color-black;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: transparent;
+        width: 90%;
+        display: block;
+
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-2;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-grey-dark-3;
+        }
+
+        
+    }
+
+    &__label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}

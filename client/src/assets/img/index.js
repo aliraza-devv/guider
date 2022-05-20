@@ -1,0 +1,11 @@
+export { default as Logo } from './header-logo-2.png';
+export { default as Nature } from './nature-1.jpg';
+export { default as Desert } from './desert.jpg';
+export { default as River } from './river.jpg';
+export { default as User1 } from './user-1.jpg';
+export { default as User2 } from './user-2.jpg';
+export { default as User3 } from './user-3.jpg';
+export { default as FooterLogo } from './footer-logo.png';
+export { default as Google } from './google.png';
+export { default as Facebook } from './fb.png';
+export { default as Twitter } from './twitter.png';
